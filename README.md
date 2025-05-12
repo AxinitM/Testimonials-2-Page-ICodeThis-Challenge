@@ -3,14 +3,12 @@
 This is a solution to a challenge "Subscription Plan" from the website [ICodeThis](https://icodethis.com/modes/design-to-code/467/submissions).
 
 ## Table of contents
-- [Testimonials-2 Page /ICodeThis Challenge](#testimonials-2-page-icodethis-challenge)
-  - [Table of contents](#table-of-contents)
-  - [Task](#task)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [How it works](#how-it-works)
-  - [Built with](#built-with)
-  - [Author](#author)
+[Task](#task)
+[Screenshot](#screenshot)
+[Links](#links)
+[How it works](#how-it-works)
+[Built with](#built-with)
+[Author](#author)
 
 ## Task
 
@@ -24,7 +22,7 @@ Below the testimonial, include a row of logos from various companies. Ensure tha
 
 ## Links
 
-[Background Changer Page](https://your-solution-url.com)
+[Testimonials-2 Page](https://axinitm.github.io/Testimonials-2-Page-ICodeThis-Challenge/)
 
 ## How it works
 
