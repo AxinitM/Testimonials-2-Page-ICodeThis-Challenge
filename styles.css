@@ -1,0 +1,250 @@
+:root {
+  /* Colors */
+  --clr-bg: #c9c9db;
+  --clr-bgContainer: #fff;
+  --clr-bgLinks: #d5d5d5;
+  --clr-text: #000;
+  --clr-LinksShadow: rgba(255, 255, 255, 0.5);
+
+  /* Fonts */
+  --mainFamilyFont: "Poppins", sans-serif;
+
+  /* radius */
+  --radius: 10px;
+}
+
+/* Reset settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--mainFamilyFont, sans-serif);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Body settings */
+body {
+  background-color: var(--clr-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#container {
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* main-block sets */
+
+#main-block {
+  background: var(--clr-bgContainer);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: var(--radius);
+
+  /* image section */
+}
+#image-section {
+  width: 50%;
+  height: auto;
+}
+
+#image-section img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: var(--radius) 0 0 var(--radius);
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* text section sets */
+#text-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 1rem 4rem;
+}
+svg {
+  width: 20px;
+  height: 20px;
+  margin-left: -1rem;
+}
+
+.idea-paragraph {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+#signature-section {
+  margin-top: 5rem;
+  line-height: 2rem;
+}
+
+#signature-section p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+/* logos section sets */
+#logos-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+#logos-section ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+#logos-section li {
+  list-style: none;
+  width: 100px;
+  height: auto;
+}
+
+#logos-section a {
+  display: inline-block;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+#logos-section a:hover {
+  background: var(--clr-bgContainer);
+
+  transform: scale(1.2);
+}
+
+#logos-section img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+  object-fit: cover;
+  padding: 1rem;
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 767px) {
+  /* main block sets */
+  #main-block {
+    flex-direction: column;
+    width: 80%;
+    margin-top: 2rem;
+  }
+  /* image section sets */
+  #image-section {
+    width: 100%;
+    height: auto;
+  }
+
+  #image-section img {
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+
+  /* text section sets */
+  #text-section {
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+  }
+  svg {
+    width: 18px;
+    height: 18px;
+    margin-left: -1rem;
+  }
+
+  .idea-paragraph {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  #signature-section {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #signature-section p {
+    font-size: 0.8rem;
+  }
+
+  /* logos section sets */
+
+  #logos-section {
+    width: 80%;
+    margin: 2rem 0;
+  }
+
+  #logos-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 10px;
+    justify-content: center;
+  }
+
+  #logos-section ul li {
+    flex: 0 1 calc(50% - 1rem);
+    max-width: 120px;
+    box-sizing: border-box;
+  }
+
+  #logos-section img {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.4);
+    display: block;
+    margin: 0 auto;
+  }
+
+  #logos-section a {
+    transition: none;
+  }
+
+  #logos-section a:hover {
+    background: none;
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #logos-section ul li {
+    flex: 0 1 100%;
+    max-width: 100px;
+  }
+
+  #logos-section img {
+    width: 60%;
+    padding: 0.3rem;
+  }
+
+  #logos-section a {
+    transition: none;
+  }
+
+  #logos-section a:hover {
+    background: none;
+    transform: none;
+  }
+}
