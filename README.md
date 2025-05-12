@@ -3,12 +3,12 @@
 This is a solution to a challenge "Subscription Plan" from the website [ICodeThis](https://icodethis.com/modes/design-to-code/467/submissions).
 
 ## Table of contents
-[Task](#task)
-[Screenshot](#screenshot)
-[Links](#links)
-[How it works](#how-it-works)
-[Built with](#built-with)
-[Author](#author)
+- [Task](#task)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [How it works](#how-it-works)
+- [Built with](#built-with)
+- [Author](#author)
 
 ## Task
 
